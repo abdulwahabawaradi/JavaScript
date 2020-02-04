@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>GAME</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="snake-icon" id="winner">
+    <i class='fas'>&#xf6d5; Snake Ladder Game &#xf6d5;</i>
+  </div>
+</nav>
+  
+<div class="container-flow text-center">  
+
+  <div class="row content">
+    <div class="board">
+      <div class="row" id="row">
+          
+      </div>
+    </div>
+  </div>
+
+      <span id="player_1" data-id="0"><img src="assest/player-1.png"></span>
+      <span id="player_2" data-id="0"><img src="assest/player-2.png"></span>
+      <span id="player_3" data-id="0"><img src="assest/player-3.png"></span>
+      <span id="player_4" data-id="0"><img src="assest/player-4.png"></span>
+
+      
+  <img src="assest/dice-5.png" alt="Dice" class="dice" id="dice-1">
+
+  <button id="btn" class="btn-roll btn btn-success" data-id="player_1">Roll dice</button>
+
+  <div class="player-sele">
+  <label class="start-word">Start New Game</label>
+  <label for="sel1">Select Players:</label>
+      <select class="form-control" id="sel1">
+        <option id="1-player">1</option>
+        <option id="2-player">2</option>
+        <option id="3-player">3</option>
+        <option id="4-player">4</option>
+      </select>
+  <button id="player-sele-btn" class="btn btn-primary" onclick="btnDisplay()">Start Game</button>
+  </div>
+
+  <div id="winner">
+    <span>Winner!</span>
+  </div>
+
+</div>
+
+
+<script src="js/script.js"></script>
+</body>
+</html>
